@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-template-rows:repeat(4,1fr) ;
+    grid-gap: 3px;
+}
+
+nav{
+ background: #a7ffa7
+}
+
+main{
+    background: #0ac6f9;
+}
+
+#sidebar{
+    background: #ec0a0a;
+}
+
+#content1{
+    background: #ccd13b;
+}
+
+#content2{
+    background: #0c13e0;
+}
+
+footer{
+    background: #e40ab8;
+}
