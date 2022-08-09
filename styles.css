@@ -2,30 +2,41 @@
     display: grid;
     height: 200px;
     grid-template-columns: repeat(4,1fr) ;
-    grid-template-rows:repeat(4,1fr) ;
+    grid-template-rows:0.2fr 1.5fr 1.2fr 0.8fr ;
     grid-gap: 3px;
+    grid-template-areas: 
+    "nav nav nav"
+    "sidebar main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
 }
 
 nav{
- background: #a7ffa7
+ background: #a7ffa7;
+ grid-area: nav;
 }
 
 main{
     background: #0ac6f9;
+    grid-area: main;
 }
 
 #sidebar{
     background: #ec0a0a;
+    grid-area: sidebar;
 }
 
 #content1{
     background: #ccd13b;
+    grid-area: content1;
 }
 
 #content2{
     background: #0c13e0;
+    grid-area: content2;
 }
 
 footer{
     background: #e40ab8;
+    grid-area: footer;
 }
