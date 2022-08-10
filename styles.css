@@ -1,42 +1,97 @@
+/** Defining Variables in System**/
+:root{
+ --main-radius:10px;
+ --main-padding:10px;
+}
+
+/** Refer Back to Container Class in HTML**/
 .container{
     display: grid;
-    height: 200px;
+    height: 120vh;
     grid-template-columns: repeat(4,1fr) ;
-    grid-template-rows:0.2fr 1.5fr 1.2fr 0.8fr ;
-    grid-gap: 3px;
+    grid-template-rows:0.2fr 0.2fr 1.6fr 0.9fr ;
+    grid-gap: 0.3rem;
     grid-template-areas: 
-    "nav nav nav"
-    "sidebar main main"
-    "sidebar content1 content2 content3"
-    "sidebar footer footer footer";
+    "nav nav nav nav"
+    "main main main sidebar "
+    "content1 content2 content3 sidebar"
+    "footer footer footer sidebar";
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: center;
 }
 
 nav{
  background: #a7ffa7;
  grid-area: nav;
+ border-radius: var(--main-radius);
+ padding-top: var(--main-padding);
+ font-family: Arial;
 }
 
 main{
     background: #0ac6f9;
     grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    font-family: Arial;
 }
 
 #sidebar{
     background: #ec0a0a;
     grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    font-family: Arial;
 }
 
 #content1{
     background: #ccd13b;
     grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    font-family: Arial;
 }
 
 #content2{
     background: #0c13e0;
     grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    font-family: Arial;
+}
+
+#content3{
+    background: #f1a210;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    font-family: Arial;
 }
 
 footer{
     background: #e40ab8;
     grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    font-family: Arial;
+}
+
+/** Mobile View **/
+@media only screen and (max-width:500px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.0fr 1.0fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
 }
