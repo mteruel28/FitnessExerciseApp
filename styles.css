@@ -1,15 +1,15 @@
 /** Defining Variables in System**/
 :root{
- --main-radius:10px;
- --main-padding:10px;
+ --main-radius:20px;
+ --main-padding:20px;
 }
 
 /** Refer Back to Container Class in HTML**/
 .container{
     display: grid;
     height: 120vh;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr ;
-    grid-template-rows:0.5fr 0.5fr 0.5fr 0.5fr ;
+    grid-template-columns: 1.0fr 1.0fr 0.8fr 1.0fr ;
+    grid-template-rows: auto auto auto auto ;
     grid-gap: 0.3rem;
     grid-template-areas: 
     "nav nav nav nav"
