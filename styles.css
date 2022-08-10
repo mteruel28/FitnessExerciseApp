@@ -85,10 +85,10 @@ font-size: 20px;
 }
 
 /** Mobile View **/
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:100%) and (max-height:100%) {
     .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto ;
+        grid-template-columns: 450px;
+        grid-template-rows: 150px 150px 150px 150px;
         grid-template-areas: 
         "nav"
         "main"
