@@ -83,11 +83,14 @@ footer{
 @media only screen and (max-width:500px) {
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 0.4fr 0.4fr  0.6fr;
+        grid-template-rows: 0.6fr 0.6fr 0.5fr  0.5fr;
         grid-template-areas: 
         "nav"
         "sidebar"
         "main"
+        "Content1"
+        "Content2"
+        "Content3"
         "footer";
     }
 }
