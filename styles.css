@@ -73,7 +73,9 @@ font-size: 20px;
     font-family: Arial;
 }
 **/
-access{
+
+/** Footer is for Accessibility**/
+footer{
 background: #56f2dd;  
 grid-area: footer;
 border-radius: var(--main-radius);
@@ -91,7 +93,7 @@ font-size: 20px;
         "nav"
         "main"
         "sidebar"
-        "access";
+        "footer";
     }
 }
 
