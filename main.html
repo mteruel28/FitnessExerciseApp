@@ -7,34 +7,41 @@
     <h1 align="center">Main Menu</h1>
     <h2 align="center"><p>Welcome to the Main Menu, where you can see various exercises!</p></h2>
    
-    <!--Name TextBox-->
+    <!--TextBox Form-->
     <h2 align= "center">
 <form>  
     <label id="myLabel">Start Here By Filling Out the Form:</label>
 
     <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter name" required>
+        <input type="text" id="myname" name="name" placeholder="Enter name" required>
     </div>
 
     <div>
         <label for="age">Age:</label>
-        <input type="text" id="age" name="age" placeholder="Enter Age" required>
+        <input type="text" id="myage" name="age" placeholder="Enter Age" required>
     </div>
 
     <div>
         <label for="experience">Years of Experience:</label>
-        <input type="text" id="experience" name="experience" placeholder="Enter Experience" required>
+        <input type="text" id="myexperience" name="experience" placeholder="Enter Experience" required>
+    </div>
+
+    <div>
+        <label id="myOutput" for="Output">Output is Here</label>
+       <!--<input type="text" id="output01" name="output">...</input> -->
     </div>
    
     <div>
-        <button type="button" id="myButton">Submit Here </button>
+        <button type="button" id="myButton" onclick="btn01()">Submit Here </button>
      
     </div>
 
     <div>
         <input type= "reset">
     </div>
+
+
     <script src="index.js"> </script>
 </form>
     </h2>
