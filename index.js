@@ -25,6 +25,15 @@ submitBtn.addEventListener('click', function() {
             //message = "I would like to recommend you the beginner exercises";
            // document.getElementById("myexperience").innerHTML = message;
 
-   
 })
+// Accessibility Feature for Accessibility Page
+let tags = document.querySelectorAll('h1,h2,h3,h4,h5,h6,p,a,ul,li,b');
+
+tags.forEach( (tag) => {
+tag.addEventListener('click', (e) => {
+    msg.text = e.target.innerText;
+    speechSynthesis.speak(msg);
+});
+});
+
 
