@@ -11,11 +11,11 @@ submitBtn.addEventListener('click', function() {
     let experience = document.getElementById("myexperience").value
     
     if( (experience) <= 5 ) {
-        document.getElementById("myOutput").innerHTML = "I recommend beginner exercises ";
+        document.getElementById("myOutput").innerHTML = "I recommend clicking beginner exercises below ";
     }  else if((experience) <= 7) {
-        document.getElementById("myOutput").innerHTML = "I recommend intermediate exercises ";
+        document.getElementById("myOutput").innerHTML = "I recommend clicking intermediate exercises below ";
     } else {
-        document.getElementById("myOutput").innerHTML = "I recommend advanced exercises ";
+        document.getElementById("myOutput").innerHTML = "I recommend clicking advanced exercises below ";
   
     }
     

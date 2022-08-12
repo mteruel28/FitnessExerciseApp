@@ -23,7 +23,7 @@
 }
 
 nav{
-background: hsl(217, 85%, 60%);     
+background: hsl(0, 62%, 52%);     
  grid-area: nav;
  border-radius: var(--main-radius);
  padding-top: var(--main-padding);
